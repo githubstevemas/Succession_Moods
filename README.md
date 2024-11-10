@@ -1,10 +1,10 @@
-# Succession Character Emotion Analysis
+# Succession Moods
 
 This project is a Django-based web application that leverages Natural Language Processing (NLP) techniques to analyze and visualize the emotional tones of characters from HBO’s Succession. By processing and interpreting dialogue data, this tool reveals insights into the underlying emotions and sentiments of each character throughout the series, providing fans and analysts with a deeper understanding of character development and relationships.
 
 <br>
 
-## Features
+## Features to Come
 
 - **Character Emotion Analysis**: Uses NLP to extract emotional tone from dialogue and attributes it to individual characters.
 - **Data Visualization**: Interactive visualizations of emotional trends and shifts for each character.
@@ -16,13 +16,11 @@ This project is a Django-based web application that leverages Natural Language P
 ## Technologies Used
 
 - [Django](https://www.djangoproject.com/) : Web framework used to build the backend and handle routing.
-- [NLTK](https://www.nltk.org/) : Natural Language Toolkit for text processing and sentiment analysis.
-- [Matplotlib](https://matplotlib.org/) : Visualization library for creating sentiment trend charts and emotional graphs.
-- [Plotly](https://plotly.com/) : Interactive graphing library for enhanced user interaction with visual data.
+- [PyMuPDF](https://pymupdf.readthedocs.io/en/latest/) : Python library for data extraction from PDF file.
 
 <br>
 
-## How to Run
+## How to Set
 
 Clone the repository:
 ```
@@ -52,12 +50,13 @@ Run migrations:
 python manage.py migrate
 ```
 
-Start the development server:
-```
-python manage.py runserver
-```
+# How to Run
 
-Then, open your web browser and go to [http://127.0.0.1:8000](http://127.0.0.1:8000).
+- Get series script (can be buyed from [Amazon.com](https://www.amazon.com)).
+- Place pdf script in ``series_script`` root folder (file must be renamed ``s01.pdf``).
+- Run ``python main.py`` for dialogue extraction from script.
+- Start development server with ``python manage.py runserver``.
+- Then, open your web browser and go to [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 <br>
 
