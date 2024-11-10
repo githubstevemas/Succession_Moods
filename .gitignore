@@ -3,3 +3,4 @@ env/
 .idea
 __pycache__/
 build/
+series_script/*
