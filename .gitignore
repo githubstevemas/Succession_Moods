@@ -4,3 +4,4 @@ env/
 __pycache__/
 build/
 series_script/*
+db.sqlite3
