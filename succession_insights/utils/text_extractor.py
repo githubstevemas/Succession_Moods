@@ -1,6 +1,8 @@
 import fitz
 import re
 
+from utils.analysis import dialogue_analysis
+
 SCRIPT_PATH = "series_script"
 SCRIPT_NAME = "s01.pdf"
 CHARACTERS = ["LOGAN",
@@ -20,8 +22,7 @@ def extract_character_text_from_episode(character, text_episode, episode_nb):
 
     character_text.pop(0)
 
-    character_dialogues = (
-        open(f"{SCRIPT_PATH}/S1/E{episode_nb}/{character}.txt", "wb"))
+    episode_dialogues = []
 
     for text in character_text:
 
@@ -40,7 +41,14 @@ def extract_character_text_from_episode(character, text_episode, episode_nb):
                 dialogue = dialogue.replace("\\t", "")
 
                 if len(dialogue) > 0:
-                    character_dialogues.write(dialogue.encode("utf8"))
+
+                    episode_dialogues.append(dialogue)
+
+    df_result = dialogue_analysis(episode_dialogues)
+
+    df_result.to_json(f"{SCRIPT_PATH}/S1/E{episode_nb}/{character}.json",
+                      orient="records",
+                      lines=True)
 
 
 def extract_episodes_from_season(season_text):
