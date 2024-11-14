@@ -1,5 +1,11 @@
 # Succession Moods
 
+<div align="center">
+  <img src="https://github.com/githubstevemas/Succession_Moods/blob/main/succession_insights/succession_insights/static/images/hero.png" alt="Succession moods hero banner" width="400">
+</div>
+
+<br>
+
 This project is a Django-based web application that leverages Natural Language Processing (NLP) techniques to analyze and visualize the emotional tones of characters from HBO’s Succession. By processing and interpreting dialogue data, this tool reveals insights into the underlying emotions and sentiments of each character throughout the series, providing fans and analysts with a deeper understanding of character development and relationships.
 
 <br>
@@ -50,6 +56,8 @@ Run migrations:
 python manage.py migrate
 ```
 
+<br>
+
 # How to Run
 
 - Get series script (can be buyed from [Amazon.com](https://www.amazon.com)).
@@ -57,6 +65,12 @@ python manage.py migrate
 - Run ``python main.py`` for dialogue extraction from script.
 - Start development server with ``python manage.py runserver``.
 - Then, open your web browser and go to [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
+<br>
+
+## Disclaimer
+
+This project is a fan project and is not affiliated with Succession, HBO, or its creators. All rights to Succession, including characters, images, and other related elements, belong to HBO and their respective creators. This project is intended for personal and educational purposes only, with no intent to infringe on these rights.
 
 <br>
 
