@@ -23,6 +23,8 @@ This project is a Django-based web application that leverages Natural Language P
 
 - [Django](https://www.djangoproject.com/) : Web framework used to build the backend and handle routing.
 - [PyMuPDF](https://pymupdf.readthedocs.io/en/latest/) : Python library for data extraction from PDF file.
+- [HuggingFace](https://huggingface.co/) : Powerful NLP library providing pre-trained models for sentiment analysis and text generation.
+- [Pandas](https://pandas.pydata.org/) : Versatile data analysis library for data manipulation, cleaning, and transformation in Python.
 
 <br>
 
