@@ -7,12 +7,6 @@ sentiment_analyzer = pipeline(
 )
 
 
-def episode_analysis():
-    # From episode df, get analysis of character
-
-    pass
-
-
 def dialogue_analysis(dialogues):
     # Use HuggingFace for episode dialogues analysis, return a dataframe
 

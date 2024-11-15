@@ -17,17 +17,16 @@
         </a>
     </span>
     <span id="header-menu">
-        <a class="button-menu" href="">Menu</a>
-        <a class="button-menu" href="">Menu</a>
-        <a class="button-menu" href="">Menu</a>
-        <a class="button-menu" href="">Menu</a>
+        <a class="button-menu" href="{% url 'index' %}">HOME</a>
+        <a class="button-menu" href="{% url 'moods' %}">MOODS</a>
+        <a class="button-menu" href="{% url 'index' %}">MENU</a>
+        <a class="button-menu" href="{% url 'index' %}">MENU</a>
     </span>
 
 </header>
 
-
 <div class="container">
-    <img class="hero-banner" src="/static/images/hero.png" alt="succession moods hero banner">
+    {% block content %}{% endblock content %}
 </div>
 
 
