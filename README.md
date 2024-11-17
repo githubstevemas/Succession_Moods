@@ -1,7 +1,7 @@
 # Succession Moods
 
 <div align="center">
-  <img src="https://github.com/githubstevemas/Succession_Moods/blob/main/succession_insights/succession_insights/static/images/hero.png" alt="Succession moods hero banner" width="400">
+  <img src="https://github.com/githubstevemas/Succession_Moods/blob/main/succession_insights/static/images/hero.png" alt="Succession moods hero banner" width="400">
 </div>
 
 <br>
