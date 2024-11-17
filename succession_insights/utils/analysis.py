@@ -1,4 +1,5 @@
 import pandas as pd
+
 from transformers import pipeline
 
 sentiment_analyzer = pipeline(
@@ -12,7 +13,6 @@ def dialogue_analysis(dialogues):
 
     result = []
     for dialogue in dialogues:
-
         sentiment = sentiment_analyzer(dialogue)[0]
 
         result.append({

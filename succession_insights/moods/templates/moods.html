@@ -7,32 +7,39 @@
 <div class="moods-container">
 
     <div class="head-container">
-        <a class="head-button" href="">
+        <a class="head-button" href="{% url 'character_moods' 'ROMAN' %}">
             <img class="character-head" src="/static/images/roman.png" alt="shiv head">
         </a>
-        <a class="head-button" href="">
+        <a class="head-button" href="{% url 'character_moods' 'KENDAL' %}">
             <img class="character-head" src="/static/images/kendal.png" alt="shiv head">
         </a>
-        <a class="head-button" href="">
+        <a class="head-button" href="{% url 'character_moods' 'LOGAN' %}">
             <img class="character-head" src="/static/images/logan.png" alt="shiv head">
         </a>
-        <a class="head-button" href="">
+        <a class="head-button" href="{% url 'character_moods' 'SHIV' %}">
             <img class="character-head" src="/static/images/shiv.png" alt="shiv head">
         </a>
-        <a class="head-button" href="">
+        <a class="head-button" href="{% url 'character_moods' 'TOM' %}">
             <img class="character-head" src="/static/images/tom.png" alt="shiv head">
         </a>
     </div>
 
     <div class="moods-intro-text">
-        <h1 class="highlighted-text">
-            <span>Discover Your Favorite</span><br>
-            <span>Character’s Emotional</span><br>
-            <span>Rollercoaster</span></h1>
-        <h3>
-            Select a character to explore their emotional highs and lows as each plot twist unfolds. From fierce power moves to unexpected vulnerability—follow the mood journey of Logan, Kendall, Shiv, Roman, and more, and discover the emotions behind every game-changing moment.
-        </h3>
+
+        {{ graph_html|safe }}
+
+        {% if not graph_html %}
+            <h1 class="highlighted-text">
+                <span>Discover Your Favorite</span><br>
+                <span>Character’s Emotional</span><br>
+                <span>Rollercoaster</span></h1>
+            <h3>
+                Select a character to explore their emotional highs and lows as each plot twist unfolds. From fierce power moves to unexpected vulnerability—follow the mood journey of Logan, Kendall, Shiv, Roman, and more, and discover the emotions behind every game-changing moment.
+            </h3>
+        {% endif %}
+
     </div>
 
 </div>
+
 {% endblock content %}

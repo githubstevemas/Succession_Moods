@@ -103,13 +103,14 @@ h1 {
     font-size: 14px;
     width: 550px;
     text-align: left;
+    margin-left: 50px;
 }
 
 .head-container {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
-    margin-left: -190px;
+    margin-left: -100px;
 }
 
 .character-head {
