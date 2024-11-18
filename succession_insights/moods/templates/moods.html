@@ -6,38 +6,55 @@
 
 <div class="moods-container">
 
-    <div class="head-container">
-        <a class="head-button" href="{% url 'character_moods' 'ROMAN' %}">
-            <img class="character-head" src="/static/images/roman.png" alt="shiv head">
-        </a>
-        <a class="head-button" href="{% url 'character_moods' 'KENDAL' %}">
-            <img class="character-head" src="/static/images/kendal.png" alt="shiv head">
-        </a>
-        <a class="head-button" href="{% url 'character_moods' 'LOGAN' %}">
-            <img class="character-head" src="/static/images/logan.png" alt="shiv head">
-        </a>
-        <a class="head-button" href="{% url 'character_moods' 'SHIV' %}">
-            <img class="character-head" src="/static/images/shiv.png" alt="shiv head">
-        </a>
-        <a class="head-button" href="{% url 'character_moods' 'TOM' %}">
-            <img class="character-head" src="/static/images/tom.png" alt="shiv head">
-        </a>
+    <div class="scoop-container">
+        <span class="scoop-title">Scoop</span>
+        <div class="scoop">
+            <img class="scoop-img" src="/static/images/scoop-shiv.png" alt="shiv-scoop">
+            <p>"I am a hundred feet tall. These people are pygmies."</p>
+        </div>
+        <hr>
+        <div class="scoop">
+            <img class="scoop-img" src="/static/images/scoop-roman.png" alt="shiv-scoop">
+            <p>"I’m just generally down for whatever humiliates someone else for my amusement."</p>
+        </div>
     </div>
 
-    <div class="moods-intro-text">
+    <div class="stats-container">
+        <div class="head-container">
+            <a class="head-button" href="{% url 'character_moods' 'ROMAN' %}">
+                <img class="character-head" src="/static/images/roman.png" alt="shiv head">
+            </a>
+            <a class="head-button" href="{% url 'character_moods' 'KENDAL' %}">
+                <img class="character-head" src="/static/images/kendal.png" alt="shiv head">
+            </a>
+            <a class="head-button" href="{% url 'character_moods' 'LOGAN' %}">
+                <img class="character-head" src="/static/images/logan.png" alt="shiv head">
+            </a>
+            <a class="head-button" href="{% url 'character_moods' 'SHIV' %}">
+                <img class="character-head" src="/static/images/shiv.png" alt="shiv head">
+            </a>
+            <a class="head-button" href="{% url 'character_moods' 'TOM' %}">
+                <img class="character-head" src="/static/images/tom.png" alt="shiv head">
+            </a>
+        </div>
 
-        {{ graph_html|safe }}
+        <div class="moods-intro-text">
+            {{ graph_html|safe }}
+            {% if not graph_html %}
+                <h1 class="highlighted-text">
+                    <span>Discover Your Favorite</span><br>
+                    <span>Character’s Emotional</span><br>
+                    <span>Rollercoaster</span></h1>
+                <h3>
+                    Select a character to explore their emotional highs and lows as each plot twist unfolds. From fierce power moves to unexpected vulnerability—follow the mood journey of Logan, Kendall, Shiv, Roman, and more, and discover the emotions behind every game-changing moment.
+                </h3>
+            {% endif %}
+        </div>
+    </div>
 
-        {% if not graph_html %}
-            <h1 class="highlighted-text">
-                <span>Discover Your Favorite</span><br>
-                <span>Character’s Emotional</span><br>
-                <span>Rollercoaster</span></h1>
-            <h3>
-                Select a character to explore their emotional highs and lows as each plot twist unfolds. From fierce power moves to unexpected vulnerability—follow the mood journey of Logan, Kendall, Shiv, Roman, and more, and discover the emotions behind every game-changing moment.
-            </h3>
-        {% endif %}
-
+    <div class="exclusive-container">
+        <span class="exclusive-title">Exclusive</span>
+        <span class="exclusive-text">How the Roy Siblings Are ‘Breaking Away’ as Logan’s Shadow Looms — and Shaping Succession’s Legacy Into Their Own</span>
     </div>
 
 </div>

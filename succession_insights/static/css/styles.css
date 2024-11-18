@@ -10,7 +10,6 @@ html {
 
 body {
     background-color: #F7F7F7;
-    font-family: Espera;
     display: flex;
     flex-direction: column;
     min-height: 95vh;
@@ -41,6 +40,10 @@ footer {
 h1 {
     font-family: sackers-gothic;
     font-size: 38px;
+}
+
+hr {
+    background-color: #c6289aff;
 }
 
 .logo {
@@ -99,18 +102,76 @@ h1 {
     align-items: center;
 }
 
+.stats-container {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 1px solid;
+    box-shadow: #c6289aff 8px 8px 3px;
+}
+
+.scoop-container {
+    width: 200px;
+    font-size: 16px;
+    font-family: sackers-gothic;
+}
+
+.scoop-title {
+    font-size: 34px;
+    font-weight: bold;
+    color: black;
+    margin-left: 30px;
+    text-transform: uppercase;
+    transform: rotate(-5deg);
+    display: inline-block;
+    background-color: yellow;
+    padding: 0 8px;
+}
+
+.scoop {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.scoop-img {
+    width: 200px;
+    height: auto;
+}
+
+.exclusive-container {
+    font-family: sackers-gothic;
+    border: 1px solid;
+    box-shadow: #c6289aff 8px 8px 3px;
+    width: 200px;
+    padding: 10px;
+}
+
+.exclusive-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #c6289aff;
+}
+
+.exclusive-text {
+    font-size: 20px;
+}
+
 .moods-intro-text {
     font-size: 14px;
     width: 550px;
     text-align: left;
-    margin-left: 50px;
 }
 
 .head-container {
     display: flex;
     flex-direction: column;
-    margin-right: 50px;
-    margin-left: -100px;
+    margin-right: 10px;
 }
 
 .character-head {
