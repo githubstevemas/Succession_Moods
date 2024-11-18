@@ -60,7 +60,7 @@ python manage.py migrate
 
 <br>
 
-# How to Run
+## How to Run
 
 - Get series script (can be buyed from [Amazon.com](https://www.amazon.com)).
 - Place pdf script in ``series_script`` root folder (file must be renamed ``s01.pdf``).
@@ -70,7 +70,9 @@ python manage.py migrate
 
 <br>
 
-## SCREENSHOTS
+## Screenshots
+
+<br>
 
 <div align="center">
   <img src="https://github.com/githubstevemas/Succession_Moods/blob/main/succession_insights/static/images/screens/screenshot_01.png" alt="Succession moods hero banner" width="400">
