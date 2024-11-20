@@ -48,6 +48,14 @@ def character_moods(request, character_name):
         barmode='stack'
     )
 
+    fig.update_traces(
+        hoverlabel=dict(
+            bgcolor="#F7F7F7",
+            font_size=12,
+            font_color="black"
+        )
+    )
+
     fig.update_layout(
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)'

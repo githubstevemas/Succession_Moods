@@ -21,7 +21,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 80px;
     display: flex;
     align-items: center;
     background-color: white;
@@ -43,13 +43,15 @@ h1 {
 }
 
 hr {
-    background-color: #c6289aff;
+    border: none;
+    height: 1px;
+    background-color: #c6289a;
 }
 
 .logo {
-    width: 70px;
+    width: 120px;
     height: auto;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .button-menu {
@@ -112,7 +114,7 @@ hr {
     padding-top: 20px;
     padding-bottom: 10px;
     border: 1px solid;
-    box-shadow: #c6289aff 8px 8px 3px;
+    box-shadow: #c6289aff 5px 5px 12px;
 }
 
 .scoop-container {
@@ -126,7 +128,6 @@ hr {
     font-weight: bold;
     color: black;
     margin-left: 30px;
-    text-transform: uppercase;
     transform: rotate(-5deg);
     display: inline-block;
     background-color: yellow;
@@ -145,15 +146,35 @@ hr {
 
 .exclusive-container {
     font-family: sackers-gothic;
-    border: 1px solid;
-    box-shadow: #c6289aff 8px 8px 3px;
+    border: 1px solid black;
     width: 200px;
+    height: auto;
     padding: 10px;
+    position: relative;
+    background: white;
+}
+
+.exclusive-container::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        -135deg,
+        #c6289a,
+        #c6289a 3px,
+        transparent 3px,
+        transparent 6px
+    );
+    z-index: -1;
 }
 
 .exclusive-title {
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 10px;
     color: white;
     background-color: #c6289aff;
 }
@@ -171,7 +192,7 @@ hr {
 .head-container {
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .character-head {

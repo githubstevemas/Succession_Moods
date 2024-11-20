@@ -12,7 +12,8 @@ CHARACTERS = ["LOGAN",
               "GREG",
               "LAWRENCE",
               "ROMAN",
-              "CONNOR"]
+              "CONNOR",
+              "TOM"]
 
 
 def extract_character_text_from_episode(character, text_episode, episode_nb):
