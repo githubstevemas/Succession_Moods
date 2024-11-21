@@ -3,6 +3,11 @@
     src: url(../fonts/sackers-gothic.otf);
 }
 
+@font-face {
+    font-family: Quicksand_Book;
+    src: url(../fonts/Quicksand_Book.otf);
+}
+
 html {
     overflow-y: scroll;
     margin: 0;
@@ -77,7 +82,7 @@ hr {
 
 .highlighted-text {
     color: white;
-    font-size: 2em;
+    font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
     transform: rotate(-2deg);
@@ -115,6 +120,12 @@ hr {
     padding-bottom: 10px;
     border: 1px solid;
     box-shadow: #c6289aff 5px 5px 12px;
+}
+
+.graphic-title {
+    margin-left: 35px;
+    margin-top: 30px;
+    font-size: 16px;
 }
 
 .scoop-container {
@@ -184,7 +195,6 @@ hr {
 }
 
 .moods-intro-text {
-    font-size: 14px;
     width: 550px;
     text-align: left;
 }
@@ -193,6 +203,13 @@ hr {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
+}
+
+.intro-text {
+    margin-top: 60px;
+    margin-left: 15px;
+    font-family: Quicksand_Book;
+    font-size: 18px;
 }
 
 .character-head {

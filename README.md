@@ -63,7 +63,7 @@ python manage.py migrate
 ## How to Run
 
 - Get series script (can be buyed from [Amazon.com](https://www.amazon.com)).
-- Place pdf script in ``series_script`` root folder (file must be renamed ``s01.pdf``).
+- Place pdf scripts in ``series_script`` root folder (files must be renamed ``s01.pdf``, ``s02.pdf``, ``s03.pdf``, ``s04.pdf``).
 - Run ``python main.py`` for dialogue extraction from script.
 - Start development server with ``python manage.py runserver``.
 - Then, open your web browser and go to [http://127.0.0.1:8000](http://127.0.0.1:8000).
@@ -75,7 +75,13 @@ python manage.py migrate
 <br>
 
 <div align="center">
-  <img src="https://github.com/githubstevemas/Succession_Moods/blob/main/succession_insights/static/images/screens/screenshot_01.png" alt="Succession moods hero banner" width="400">
+  <img src="https://github.com/githubstevemas/Succession_Moods/blob/main/succession_insights/static/images/screens/screenshot_01.png" alt="Succession moods screeshot 01" width="400">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/githubstevemas/Succession_Moods/blob/main/succession_insights/static/images/screens/screenshot_02.png" alt="Succession moods screeshot 01" width="400">
 </div>
 
 <br>

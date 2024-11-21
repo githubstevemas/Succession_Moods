@@ -10,12 +10,12 @@ def moods(request):
     return render(request, 'moods.html')
 
 
-def character_moods(request, character_name):
+def character_moods(request,  character_name, season="1"):
     season_sentiments = []
 
     for episode in range(1, 11):
 
-        file_path = f"../series_script/S1/E{episode}/{character_name}.json"
+        file_path = f"../series_script/S{season}/E{episode}/{character_name}.json"
         print(f"Checking: {os.path.abspath(file_path)}")
         df = pd.read_json(file_path, lines=True)
 
@@ -38,7 +38,6 @@ def character_moods(request, character_name):
         x='Episode',
         y='Percentage',
         color='Sentiment',
-        title=f"{character_name} Across Episodes",
         color_discrete_map={
             "positive": "#77DD77",
             "neutral": "#FFB347",
@@ -58,11 +57,19 @@ def character_moods(request, character_name):
 
     fig.update_layout(
         paper_bgcolor='rgba(0,0,0,0)',
-        plot_bgcolor='rgba(0,0,0,0)'
+        plot_bgcolor='rgba(0,0,0,0)',
+        margin=dict(
+            l=20,
+            r=10,
+            t=30,
+            b=40
+        )
     )
 
     graph_html = fig.to_html(full_html=False, config={'displayModeBar': False})
 
     return render(request,
                   'moods.html',
-                  {'graph_html': graph_html})
+                  {'graph_html': graph_html,
+                   'character_name': character_name.capitalize(),
+                   'season': season})
