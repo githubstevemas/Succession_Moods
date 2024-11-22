@@ -15,18 +15,22 @@ def character_moods(request,  character_name, season="1"):
 
     for episode in range(1, 11):
 
-        file_path = f"../series_script/S{season}/E{episode}/{character_name}.json"
-        print(f"Checking: {os.path.abspath(file_path)}")
-        df = pd.read_json(file_path, lines=True)
+        try:
+            file_path = f"../series_script/S{season}/E{episode}/{character_name}.json"
+            print(f"Checking: {os.path.abspath(file_path)}")
+            df = pd.read_json(file_path, lines=True)
 
-        if not df.empty:
-            sentiment_counts = df['Sentiment'].value_counts(
-                normalize=True) * 100
-        else:
-            sentiment_counts = pd.Series(
-                {"positive": 0, "neutral": 0, "negative": 0})
+            if not df.empty:
+                sentiment_counts = df['Sentiment'].value_counts(
+                    normalize=True) * 100
+            else:
+                sentiment_counts = pd.Series(
+                    {"positive": 0, "neutral": 0, "negative": 0})
 
-        season_sentiments.append(sentiment_counts)
+            season_sentiments.append(sentiment_counts)
+
+        except Exception as e:
+            print(f"Error: {e}.")
 
     season_df = pd.DataFrame(season_sentiments).fillna(0)
     season_df['Episode'] = range(1, len(season_df) + 1)

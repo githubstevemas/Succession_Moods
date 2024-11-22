@@ -63,14 +63,30 @@ hr {
     position: relative;
     text-decoration: none;
     font-family: sackers-gothic;
-    font-size: 14px;
+    font-size: 13px;
     color: #42494D;
     margin-left: 10px;
     margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.button-menu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #c6289aff;
+    transition: width 0.3s ease;
 }
 
 .button-menu:hover {
     color: black;
+}
+
+.button-menu:hover::after {
+    width: 100%;
 }
 
 .hero-banner {
@@ -215,6 +231,17 @@ hr {
 .character-head {
     width: 70px;
     height: auto;
+}
+
+.about-container {
+    width: 350px;
+    height: auto;
+}
+
+.about-text {
+    font-family: Quicksand_Book;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 #title {
