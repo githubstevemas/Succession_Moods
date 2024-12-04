@@ -5,8 +5,10 @@ def index(request):
     return render(request, 'home.html')
 
 
-def seasons(request):
-    return render(request, 'seasons.html')
+def seasons(character, season):
+
+    pass
+    # return render(request, 'seasons.html')
 
 
 def about(request):
