@@ -43,7 +43,7 @@
 
                 <div class="graphic-title">
                     <form>
-                        <label for="options" data-character="{{ character_name }}">{{ character_name }} across season</label>
+                        <label for="options" data-character="{{ character_name }}"><span class="character-name">{{ character_name }}</span> across season</label>
                         <select id="options" name="options"  onchange="submitForm()">
                             <option value="1" {% if season == "1" %}selected{% endif %}>one</option>
                             <option value="2" {% if season == "2" %}selected{% endif %}>two</option>

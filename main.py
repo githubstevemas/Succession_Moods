@@ -10,4 +10,3 @@ for season in range(1, 5):
     text = extract_text_from_pdf(season)
     extract_episodes_from_season(text, season)
     seasons_analysis()
-    

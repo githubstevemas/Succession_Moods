@@ -48,7 +48,7 @@ def character_moods(request,  character_name, season="1"):
             "negative": "#FF6961"
         },
         labels={'Episode': 'Episode ', 'Percentage': 'Percentage (%) '},
-        barmode='stack'
+        barmode='stack',
     )
 
     fig.update_traces(
@@ -56,7 +56,7 @@ def character_moods(request,  character_name, season="1"):
             bgcolor="#F7F7F7",
             font_size=12,
             font_color="black"
-        )
+        ),
     )
 
     fig.update_layout(

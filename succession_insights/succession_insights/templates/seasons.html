@@ -21,19 +21,19 @@
 
     <div class="stats-container">
         <div class="head-container">
-            <a class="head-button" href="{% url 'character_moods' 'ROMAN' '1' %}">
+            <a class="head-button" href="{% url 'character_seasons' 'ROMAN' '1' %}">
                 <img class="character-head" src="/static/images/roman.png" alt="shiv head">
             </a>
-            <a class="head-button" href="{% url 'character_moods' 'KENDAL' '1' %}">
+            <a class="head-button" href="{% url 'character_seasons' 'KENDAL' '1' %}">
                 <img class="character-head" src="/static/images/kendal.png" alt="shiv head">
             </a>
-            <a class="head-button" href="{% url 'character_moods' 'LOGAN' '1' %}">
+            <a class="head-button" href="{% url 'character_seasons' 'LOGAN' '1' %}">
                 <img class="character-head" src="/static/images/logan.png" alt="shiv head">
             </a>
-            <a class="head-button" href="{% url 'character_moods' 'SHIV' '1' %}">
+            <a class="head-button" href="{% url 'character_seasons' 'SHIV' '1' %}">
                 <img class="character-head" src="/static/images/shiv.png" alt="shiv head">
             </a>
-            <a class="head-button" href="{% url 'character_moods' 'TOM' '1' %}">
+            <a class="head-button" href="{% url 'character_seasons' 'TOM' '1' %}">
                 <img class="character-head" src="/static/images/tom.png" alt="shiv head">
             </a>
         </div>
@@ -43,7 +43,7 @@
 
                 <div class="graphic-title">
                     <form>
-                        <label for="options" data-character="{{ character_name }}">{{ character_name }} across season</label>
+                        <label for="options" data-character="{{ character_name }}"><span class="character-name">{{ character_name }}</span> average mood for season</label>
                         <select id="options" name="options"  onchange="submitForm()">
                             <option value="1" {% if season == "1" %}selected{% endif %}>one</option>
                             <option value="2" {% if season == "2" %}selected{% endif %}>two</option>
@@ -83,7 +83,7 @@
         function submitForm() {
             const optionValue = document.getElementById('options').value;
             const characterName = document.querySelector('label').getAttribute('data-character');
-            const url = `/moods/graph/${characterName}/${optionValue}/`;
+            const url = `/seasons/graph/${characterName}/${optionValue}/`;
             console.log(`Redirecting to: ${url}`);
             window.location.href = url;
         }
