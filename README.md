@@ -86,6 +86,14 @@ python manage.py migrate
 
 <br>
 
+## Upcoming Features
+
+- **Unit Tests**: Implementation of unit tests to ensure the reliability and robustness of the project.
+- **Docker Deployment**: Integration of Docker to simplify deployment and ensure a consistent environment.
+- **Responsive Website**: Development of a fully responsive design to enhance usability across all devices.
+
+<br>
+
 ## Disclaimer
 
 This project is a fan project and is not affiliated with Succession, HBO, or its creators. All rights to Succession, including characters, images, and other related elements, belong to HBO and their respective creators. This project is intended for personal and educational purposes only, with no intent to infringe on these rights.
@@ -93,6 +101,7 @@ This project is a fan project and is not affiliated with Succession, HBO, or its
 <br>
 
 ## Contact
+
 For any questions, feedback, or contributions, please reach out:
 
 Email: mas.ste@gmail.com

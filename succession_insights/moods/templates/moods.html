@@ -57,13 +57,12 @@
 
             {% endif %}
             {% if not graph_html %}
-                <h1 class="highlighted-text">
-                    <span>Discover Your Favorite</span><br>
-                    <span>Character’s Emotional</span><br>
-                    <span>Rollercoaster</span></h1>
-                <h3 class="intro-text">
-                    Select a character to explore their emotional highs and lows as each plot twist unfolds. From fierce power moves to unexpected vulnerability—follow the mood journey of Logan, Kendall, Shiv, Roman, and more, and discover the emotions behind every game-changing moment.
-                </h3>
+                <div class="intro-container">
+                    <img class="arrow-img" src="/static/images/arrow.png" alt="arrow">
+                    <h3 class="intro-text">
+                        Select a character to explore their emotional highs and lows across <span class="underlined">episodes</span>.
+                    </h3>
+                </div>
             {% endif %}
         </div>
     </div>
@@ -87,7 +86,6 @@
             console.log(`Redirecting to: ${url}`);
             window.location.href = url;
         }
-        // Expose la fonction globalement
         window.submitForm = submitForm;
     });
 </script>

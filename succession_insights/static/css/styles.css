@@ -53,6 +53,11 @@ hr {
     background-color: #c6289a;
 }
 
+.underlined {
+    text-decoration: underline;
+    text-decoration-color: #c6289a;
+}
+
 .logo {
     width: 120px;
     height: auto;
@@ -89,26 +94,29 @@ hr {
     width: 100%;
 }
 
+.hero-container {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .hero-banner {
-    padding: 30px;
-    margin-bottom: 40px;
-    width: 600px;
+    width: 500px;
     height: auto;
 }
 
-.highlighted-text {
-    color: white;
-    font-size: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transform: rotate(-2deg);
-    display: inline-block;
+.hero-text {
+    margin-left: 60px;
+    width: 450px;
+    font-size: 14px;
+    font-family: sackers-gothic;
 }
 
-.highlighted-text span {
-    background-color: #c6289aff;
-    padding: 0 5px;
-    display: inline-block;
+.highlighted-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #141414;
 }
 
 .container {
@@ -128,6 +136,7 @@ hr {
 .stats-container {
     display: flex;
     align-items: center;
+    width: 600px;
     margin-left: 60px;
     margin-right: 60px;
     padding-left: 40px;
@@ -146,7 +155,7 @@ hr {
 
 .scoop-container {
     width: 200px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: sackers-gothic;
 }
 
@@ -164,6 +173,7 @@ hr {
 .scoop {
     margin-top: 25px;
     margin-bottom: 25px;
+    height: 225px;
 }
 
 .scoop-img {
@@ -221,11 +231,26 @@ hr {
     margin-right: 20px;
 }
 
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .intro-text {
     margin-top: 60px;
-    margin-left: 15px;
+    margin-left: 55px;
+    margin-right: 20px;
     font-family: Quicksand_Book;
-    font-size: 18px;
+    font-size: 21px;
+    transform: rotate(-3deg);
+}
+
+.arrow-img {
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 100px;
+    height: auto:
 }
 
 .character-head {

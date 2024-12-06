@@ -1,4 +1,6 @@
+import json
 import os
+import random
 
 import pandas as pd
 import plotly.express as px
@@ -7,21 +9,22 @@ from django.shortcuts import render
 
 
 def index(request):
+
     return render(request, 'home.html')
 
 
 def seasons(request):
+
     return render(request, 'seasons.html')
 
 
-def character_seasons(request, character_name, season=1):
+def character_seasons(request, character_name, season="1"):
 
     file_path = f"../series_script/S{season}/averages.json"
 
-    if not os.path.exists(file_path):
-        print(f"Le fichier {file_path} n'existe pas.")
-
     df = pd.read_json(file_path)
+
+    character_name = character_name.upper()
 
     character_data = df[character_name]
 
@@ -66,6 +69,10 @@ def character_seasons(request, character_name, season=1):
                   {'graph_html': graph_html,
                    'character_name': character_name.capitalize(),
                    'season': season})
+
+
+def quotes(request):
+    return render(request, 'quotes.html')
 
 
 def about(request):
