@@ -31,7 +31,7 @@ def episode_analysis(season, character):
 
             sentiments = [entry['Sentiment'] for entry in data]
 
-            # count sentiment per cent
+            # Sentiment per cent count
             sentiment_counts = {
                 sentiment: (sentiments.count(sentiment) / len(
                     sentiments)) * 100

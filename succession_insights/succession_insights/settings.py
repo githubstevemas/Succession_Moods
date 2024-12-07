@@ -24,6 +24,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'succession_insights',
     'moods',
+    'seasons',
+    'quotes',
 ]
 
 MIDDLEWARE = [

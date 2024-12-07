@@ -238,8 +238,8 @@ hr {
 }
 
 .intro-text {
-    margin-top: 60px;
-    margin-left: 55px;
+    margin-top: 50px;
+    margin-left: 45px;
     margin-right: 20px;
     font-family: Quicksand_Book;
     font-size: 21px;
@@ -247,7 +247,7 @@ hr {
 }
 
 .arrow-img {
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 25px;
     width: 100px;
     height: auto:

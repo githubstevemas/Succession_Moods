@@ -51,6 +51,7 @@ def character_moods(request,  character_name, season="1"):
         barmode='stack',
     )
 
+    # Change tooltips colors and font style
     fig.update_traces(
         hoverlabel=dict(
             bgcolor="#F7F7F7",
@@ -59,6 +60,7 @@ def character_moods(request,  character_name, season="1"):
         ),
     )
 
+    # Change fig sizes
     fig.update_layout(
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
@@ -70,6 +72,7 @@ def character_moods(request,  character_name, season="1"):
         )
     )
 
+    # Mask modeBar
     graph_html = fig.to_html(full_html=False, config={'displayModeBar': False})
 
     return render(request,
