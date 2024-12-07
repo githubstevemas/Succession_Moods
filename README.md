@@ -84,6 +84,10 @@ python manage.py migrate
   <img src="https://github.com/githubstevemas/Succession_Moods/blob/main/succession_insights/static/images/screens/screenshot_02.png" alt="Succession moods screeshot 01" width="400">
 </div>
 
+<div align="center">
+  <img src="https://github.com/githubstevemas/Succession_Moods/blob/main/succession_insights/static/images/screens/screenshot_03.png" alt="Succession moods screeshot 01" width="400">
+</div>
+
 <br>
 
 ## Upcoming Features
