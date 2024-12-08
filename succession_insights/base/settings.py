@@ -22,7 +22,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'succession_insights',
+    'base',
     'moods',
     'seasons',
     'quotes',
@@ -38,7 +38,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'succession_insights.urls'
+ROOT_URLCONF = 'base.urls'
 
 TEMPLATES = [
     {
@@ -56,7 +56,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'succession_insights.wsgi.application'
+WSGI_APPLICATION = 'base.wsgi.application'
 
 
 # Database

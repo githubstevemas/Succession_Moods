@@ -69,7 +69,8 @@ def character_moods(request,  character_name, season="1"):
             r=10,
             t=30,
             b=40
-        )
+        ),
+        autosize=True
     )
 
     # Mask modeBar

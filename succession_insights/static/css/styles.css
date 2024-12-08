@@ -26,7 +26,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     background-color: white;
@@ -59,7 +59,7 @@ hr {
 }
 
 .logo {
-    width: 120px;
+    width: 60px;
     height: auto;
     padding-top: 10px;
 }
@@ -68,10 +68,10 @@ hr {
     position: relative;
     text-decoration: none;
     font-family: sackers-gothic;
-    font-size: 13px;
+    font-size: 10px;
     color: #42494D;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
     transition: color 0.3s ease;
 }
 
@@ -97,24 +97,32 @@ hr {
 .hero-container {
     height: auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .hero-banner {
-    width: 500px;
+    display: none;
+}
+
+.hero-banner-mobile {
+    margin-top: 20px;
+    width: 120px;
     height: auto;
 }
 
 .hero-text {
-    margin-left: 60px;
-    width: 450px;
-    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 280px;
+    font-size: 12px;
     font-family: sackers-gothic;
 }
 
 .highlighted-text {
-    font-size: 36px;
+    font-size: 20px;
     font-weight: bold;
     color: #141414;
 }
@@ -123,40 +131,12 @@ hr {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 120px;
-}
-
-.moods-container {
-    display: flex;
-    align-items: center;
-}
-
-.stats-container {
-    display: flex;
-    align-items: center;
-    width: 600px;
-    margin-left: 60px;
-    margin-right: 60px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border: 1px solid;
-    box-shadow: #c6289aff 5px 5px 12px;
-}
-
-.graphic-title {
-    margin-left: 35px;
-    margin-top: 30px;
-    font-size: 16px;
+    margin-top: 80px;
 }
 
 .scoop-container {
-    width: 200px;
-    font-size: 14px;
-    font-family: sackers-gothic;
+    display: none;
 }
 
 .scoop-title {
@@ -182,13 +162,7 @@ hr {
 }
 
 .exclusive-container {
-    font-family: sackers-gothic;
-    border: 1px solid black;
-    width: 200px;
-    height: auto;
-    padding: 10px;
-    position: relative;
-    background: white;
+    display: none;
 }
 
 .exclusive-container::before {
@@ -220,14 +194,36 @@ hr {
     font-size: 20px;
 }
 
+.moods-container {
+    display: flex;
+    align-items: center;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.graphic-title {
+    margin-left: 35px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.graphic {
+    width: 280px;
+}
+
 .moods-intro-text {
-    width: 550px;
+    width: 280px;
     text-align: left;
 }
 
 .head-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-right: 20px;
 }
 
@@ -239,22 +235,17 @@ hr {
 
 .intro-text {
     margin-top: 50px;
-    margin-left: 45px;
-    margin-right: 20px;
     font-family: Quicksand_Book;
-    font-size: 21px;
+    font-size: 15px;
     transform: rotate(-3deg);
 }
 
 .arrow-img {
-    margin-left: 30px;
-    margin-top: 25px;
-    width: 100px;
-    height: auto:
+    display: none;
 }
 
 .character-head {
-    width: 70px;
+    width: 50px;
     height: auto;
 }
 
@@ -264,27 +255,295 @@ hr {
 }
 
 .about-container {
-    width: 350px;
+    margin-top: 120px;
+    width: 280px;
     height: auto;
 }
 
 .about-text {
     font-family: Quicksand_Book;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 #title {
-    display: flex;
-    align-items: center;
-    margin-left: 200px;
-    font-size: 38px;
+    display: none;
 }
 
 #header-menu {
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 #menu-header {
     margin-left: 90px;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    /* Tabs */
+
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        width: 80px;
+        height: auto;
+    }
+
+    .hero-banner {
+        display: block;
+        width: 300px;
+        height: auto;
+    }
+
+    .hero-banner-mobile {
+        display: none;
+    }
+
+    .hero-text {
+        margin-left: 40px;
+        margin-right: 40px;
+        width: 380px;
+        font-size: 13px;
+        font-family: sackers-gothic;
+    }
+
+    .highlighted-text {
+        font-size: 28px;
+    }
+
+    .button-menu {
+        font-size: 12px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .container {
+        margin-top: 120px;
+    }
+
+    #title {
+        display: flex;
+        align-items: center;
+        margin-left: 150px;
+        font-size: 38px;
+    }
+
+    .stats-container {
+        display: flex;
+        align-items: center;
+        width: 600px;
+        margin-left: 60px;
+        margin-right: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border: 1px solid;
+        box-shadow: #c6289aff 5px 5px 12px;
+    }
+
+    .graphic-title {
+        margin-top: 20px;
+    }
+
+    .graphic {
+        margin-left: 50px;
+        width: 450px;
+    }
+
+    .stats-container {
+        flex-direction: row;
+    }
+
+    .head-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .character-head {
+        width: 60px;
+        height: auto;
+    }
+
+    .moods-intro-text {
+        width: 380px;
+    }
+
+    .intro-text {
+        margin-top: 50px;
+        margin-left: 45px;
+        margin-right: 20px;
+        font-size: 19px;
+    }
+
+    .arrow-img {
+        display: block;
+        margin-left: 30px;
+        margin-top: 25px;
+        width: 100px;
+        height: auto:
+    }
+
+    .about-container {
+        margin-top: 20px;
+        width: 350px;
+        height: auto;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    /* Laptops */
+
+    header {
+        height: 80px;
+    }
+
+    .hero-container{
+        margin-top: 120px;
+    }
+
+    .hero-banner {
+        display: block;
+        width: 500px;
+        height: auto;
+    }
+
+    .hero-banner-mobile {
+        display: none;
+    }
+
+    .logo {
+        width: 120px;
+        height: auto;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-text {
+        margin-left: 60px;
+        width: 500px;
+        font-size: 15px;
+        font-family: sackers-gothic;
+    }
+
+    .highlighted-text {
+        font-size: 36px;
+    }
+
+    .button-menu {
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container {
+        margin-top: 120px;
+    }
+
+    #title {
+        display: flex;
+        align-items: center;
+        margin-left: 200px;
+        font-size: 38px;
+    }
+
+    .scoop-container {
+        display: block;
+        width: 200px;
+        font-size: 14px;
+        font-family: sackers-gothic;
+    }
+
+    .exclusive-container {
+        display: block;
+        font-family: sackers-gothic;
+        border: 1px solid black;
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        position: relative;
+        background: white;
+    }
+
+    .stats-container {
+        display: flex;
+        align-items: center;
+        width: 600px;
+        margin-left: 60px;
+        margin-right: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border: 1px solid;
+        box-shadow: #c6289aff 5px 5px 12px;
+    }
+
+    .graphic-title {
+        margin-top: 30px;
+    }
+
+    .graphic {
+        margin-left: 50px;
+        width: 450px;
+    }
+
+    .stats-container {
+        flex-direction: row;
+    }
+
+    .moods-intro-text {
+        width: 410px;
+    }
+
+    .intro-text {
+        margin-top: 50px;
+        margin-left: 45px;
+        margin-right: 20px;
+        font-family: Quicksand_Book;
+        font-size: 21px;
+        transform: rotate(-3deg);
+    }
+
+    .head-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .character-head {
+        width: 70px;
+        height: auto;
+    }
+
+    .arrow-img {
+        display: block;
+        margin-left: 30px;
+        margin-top: 25px;
+        width: 100px;
+        height: auto:
+    }
+
+    .about-container {
+        margin-top: 50px;
+        width: 350px;
+        height: auto;
+    }
+
+    .about-text {
+        font-size: 18px;
+    }
 }
