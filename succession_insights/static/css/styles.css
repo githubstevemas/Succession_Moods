@@ -279,6 +279,43 @@ hr {
     margin-left: 90px;
 }
 
+.quotes-container {
+    column-count: 1;
+    column-gap: 30px;
+}
+
+.quote {
+    width: 250px;
+    break-inside: avoid;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: Quicksand_Book;
+    font-size: 13px;
+    border: 1px solid #000;
+    box-shadow: 4px 4px 12px rgba(198, 40, 154, 0.5);
+    box-sizing: border-box;
+}
+
+.quote-image {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.quote-info {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.quote-character {
+    font-weight: bold;
+}
+
+.quote-season {
+    color: #42494D;
+}
+
 @media (min-width: 481px) and (max-width: 1024px) {
     /* Tabs */
 
@@ -385,6 +422,15 @@ hr {
         margin-top: 25px;
         width: 100px;
         height: auto:
+    }
+
+    .quotes-container {
+        column-count: 2;
+    }
+
+    .quote {
+        width: 270px;
+        font-size: 15px;
     }
 
     .about-container {
@@ -535,6 +581,15 @@ hr {
         margin-top: 25px;
         width: 100px;
         height: auto:
+    }
+
+    .quotes-container {
+        column-count: 2;
+    }
+
+    .quote {
+        width: 300px;
+        font-size: 15px;
     }
 
     .about-container {

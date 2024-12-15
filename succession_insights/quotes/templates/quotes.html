@@ -4,8 +4,25 @@
 
 {% block content %}
 
-<div class="about-container">
-    <span class="about-text">Comming soon.</span>
+<div class="quotes-container">
+    {% for item in random_quotes %}
+        {% if item.Image %}
+            <div class="quote-image">
+                <img class="quote-image" src="{{ item.Image }}" alt="Random Image">
+            </div>
+        {% else %}
+            <div class="quote">
+                <div class="quote-dialogue">
+                    {{ item.Dialogue }}
+                </div>
+                <div class="quote-info">
+                    <div class="quote-character">{{ item.Character }}</div> -
+                    <div class="quote-season">{{ item.Season }}{{ item.Episode }}</div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
 </div>
+
 
 {% endblock content %}
