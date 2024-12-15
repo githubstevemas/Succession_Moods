@@ -92,9 +92,7 @@ python manage.py migrate
 
 ## Upcoming Features
 
-- **Unit Tests**: Implementation of unit tests to ensure the reliability and robustness of the project.
 - **Docker Deployment**: Integration of Docker to simplify deployment and ensure a consistent environment.
-- **Responsive Website**: Development of a fully responsive design to enhance usability across all devices.
 
 <br>
 
