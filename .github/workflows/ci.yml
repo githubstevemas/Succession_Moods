@@ -49,6 +49,7 @@ jobs:
           echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u stevems --password-stdin
           docker push stevems/succession_moods:latest
 
+
       - name: Deploy to Render
         run: |
           curl -X POST "https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys" \
