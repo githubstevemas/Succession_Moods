@@ -279,6 +279,19 @@ hr {
     margin-left: 90px;
 }
 
+.quotes-title {
+    display: flex;
+    font-family: sackers-gothic;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.quotes-intro {
+    font-family: sackers-gothic;
+    margin-bottom: 50px;
+}
+
 .quotes-container {
     column-count: 1;
     column-gap: 30px;

@@ -1,0 +1,9 @@
+env/
+.env
+.idea/
+.git/
+.github/
+README.md
+readthedocs.yaml
+Dockerfile
+docker-compose.yml
