@@ -8,8 +8,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app/
 
-RUN python /app/manage.py collectstatic --noinput
+RUN python /app/succession_insights/manage.py collectstatic --noinput
 
 EXPOSE 8000
 
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "base.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "succession_insights.base.wsgi:application"]
