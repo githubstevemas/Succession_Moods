@@ -10,7 +10,7 @@ load_dotenv()
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = os.getenv('DEBUG_VALUE', 'FALSE') == 'TRUE'
+DEBUG = 'FALSE'
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://succession-moods.onrender.com']
 
