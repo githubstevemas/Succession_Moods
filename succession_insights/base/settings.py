@@ -14,7 +14,6 @@ DEBUG = os.getenv('DEBUG_VALUE', 'FALSE') == 'TRUE'
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://succession-moods.onrender.com']
 
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
