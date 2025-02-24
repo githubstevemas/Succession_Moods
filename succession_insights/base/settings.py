@@ -8,11 +8,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv()
 
-SECRET_KEY = os.getenv('DB_PASSWORD')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = os.getenv('DEBUG_VALUE', 'FALSE') == 'TRUE'
 
-ALLOWED_HOSTS = ['https://succession-moods.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://succession-moods.onrender.com']
 
 
 INSTALLED_APPS = [
