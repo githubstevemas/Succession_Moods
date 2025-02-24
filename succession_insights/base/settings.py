@@ -12,7 +12,7 @@ SECRET_KEY = os.getenv('DB_PASSWORD')
 
 DEBUG = os.getenv('DEBUG_VALUE', 'FALSE') == 'TRUE'
 
-ALLOWED_HOSTS = ['succession-moods.onrender.com']
+ALLOWED_HOSTS = ['https://succession-moods.onrender.com']
 
 
 INSTALLED_APPS = [
