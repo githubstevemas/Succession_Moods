@@ -12,7 +12,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = 'FALSE'
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://succession-moods.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'succession-moods.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
