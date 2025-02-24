@@ -1,0 +1,24 @@
+{
+    "quotes": [
+        {
+            "text": "I am a hundred feet tall. These people are pygmies.",
+            "image": "/static/images/scoop-shiv.png"
+        },
+        {
+            "text": "I’m just generally down for whatever humiliates someone else for my amusement.",
+            "image": "/static/images/scoop-roman.png"
+        },
+        {
+            "text": "Sometimes it is a big dick competition.",
+            "image": "/static/images/scoop-kendal.png"
+        },
+        {
+            "text": "Do you want to make a deal with the devil?",
+            "image": "/static/images/scoop-tom.png"
+        },
+        {
+            "text": "The good thing about having a family that doesn’t love you is you learn to live without it.",
+            "image": "/static/images/scoop-connor.png"
+        }
+    ]
+}
