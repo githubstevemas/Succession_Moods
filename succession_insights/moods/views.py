@@ -13,10 +13,15 @@ def moods(request):
 def character_moods(request,  character_name, season="1"):
     season_sentiments = []
 
+    if os.getenv('ENV') == 'prod':
+        file_path = "/app/series_script/"
+    else:
+        file_path = "../series_script/"
+
     for episode in range(1, 11):
 
         try:
-            file_path = f"../series_script/S{season}/E{episode}/{character_name}.json"
+            file_path = f"{file_path}S{season}/E{episode}/{character_name}.json"
             print(f"Checking: {os.path.abspath(file_path)}")
             df = pd.read_json(file_path, lines=True)
 

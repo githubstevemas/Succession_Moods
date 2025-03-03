@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 import plotly.express as px
 
@@ -10,7 +12,10 @@ def seasons(request):
 
 def character_seasons(request, character_name, season="1"):
 
-    file_path = f"../series_script/S{season}/averages.json"
+    if os.getenv('ENV') == 'prod':
+        file_path = f"/app/series_script/S{season}/averages.json"
+    else:
+        file_path = f"../series_script/S{season}/averages.json"
 
     df = pd.read_json(file_path)
 

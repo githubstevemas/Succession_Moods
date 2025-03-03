@@ -3,5 +3,5 @@ env/
 .idea
 __pycache__/
 build/
-series_script/*
+series_script/*.pdf
 db.sqlite3

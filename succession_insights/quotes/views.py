@@ -1,4 +1,5 @@
 import json
+import os
 import random
 
 from django.shortcuts import render
@@ -6,8 +7,19 @@ from django.shortcuts import render
 
 def quotes(request):
     # Charger les citations
-    with open("../series_script/best_quotes.json", "r", encoding="utf-8") as file:
-        best_quotes = json.load(file)
+
+    if os.getenv('ENV') == 'prod':
+        file_path = "/app/series_script/"
+    else:
+        file_path = "../series_script/"
+
+    try:
+        with (open(f"{file_path}best_quotes.json", 'r', encoding='utf-8')
+              as file):
+            best_quotes = json.load(file)
+
+    except Exception as e:
+        print(f"Error: {e}.")
 
     random_quotes = random.sample(best_quotes, 25)
 
