@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://github.com/githubstevemas/Succession_Moods/actions/workflows/ci.yml/badge.svg" alt="Build Status">
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue.svg" alt="Python Version">
+  <img src="https://img.shields.io/badge/Docker%20Image-Available-green">
+  <img src="https://img.shields.io/badge/Render-Live-green" alt="https://succession-moods.onrender.com">
+
+</p>
+
 # Succession Moods
 
 <div align="center">
@@ -7,6 +15,8 @@
 <br>
 
 This project is a Django-based web application that leverages Natural Language Processing (NLP) techniques to analyze and visualize the emotional tones of characters from HBO’s Succession. By processing and interpreting dialogue data, this tool reveals insights into the underlying emotions and sentiments of each character throughout the series, providing fans and analysts with a deeper understanding of character development and relationships.
+
+Try here : [https://succession-moods.onrender.com](https://succession-moods.onrender.com)
 
 <br>
 
@@ -25,6 +35,7 @@ This project is a Django-based web application that leverages Natural Language P
 - [HuggingFace](https://huggingface.co/) : Powerful NLP library providing pre-trained models for sentiment analysis and text generation.
 - [Pandas](https://pandas.pydata.org/) : Versatile data analysis library for data manipulation, cleaning, and transformation in Python.
 - [Plotly](https://github.com/plotly/plotly.py) : Python library for creating interactive and dynamic data visualizations
+- [Docker](https://www.docker.com/) : Share, and run container applications.
 
 <br>
 
@@ -96,7 +107,7 @@ python manage.py migrate
 
 ## Upcoming Features
 
-- **Docker Deployment**: Integration of Docker to simplify deployment and ensure a consistent environment.
+- 
 
 <br>
 
